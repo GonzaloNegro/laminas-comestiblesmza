@@ -17,7 +17,6 @@
     width: 100%;
     height: 613px;
 
-    position: absolute;
     background-color: #A15B3D;
     background-image: url(../images/background-info.png);
     background-repeat: no-repeat;
@@ -46,7 +45,6 @@
     height: 4px;
     position: absolute;
     margin-top: 100px;
-
 }
 
 .info-titulo h2{
@@ -101,3 +99,79 @@
     cursor: pointer;
 }
 /*----------GON: contacto----------*/
+
+.cont{
+    width: 100%;
+    height: 1000px;
+
+  /*   background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); */
+    background-image: url(../images/chef.png);
+    background-repeat: no-repeat;
+/*     background-attachment: fixed; */
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-form{
+    width: 818px;
+    height: 550px;
+
+
+    background: linear-gradient(152.29deg, #B47255 7.91%, #A15B3D 35.32%, #844023 94.05%);
+    border-radius: 31px;
+}
+
+.cont-form-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-form-titulo::after{
+    content: "";
+    background-color: #DFBC62;
+    width: 79px;
+    height: 4px;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.cont-form-titulo h2{
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/*----------GON: Footer----------*/
+
+.fot{
+    width: 100%;
+    height: 82px;
+
+    background-color: #DFBC62;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fot p{
+    width: 377px;
+    height: 19px;
+    left: 548px;
+    top: 4919.96px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
