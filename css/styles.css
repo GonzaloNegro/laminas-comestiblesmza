@@ -4,7 +4,89 @@
     box-sizing: border-box;
 }
 
-/* ----------FRAN: HOME Y NAVBAR---------- */
+/* ----------FRAN: HOME Y NAVBAR---------- 
+*/
+.header {
+    background-image: url(../images/background-header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav-title h1 {
+    font-family: "Khula";
+}
+.header__nav-ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    text-decoration: none;
+}
+.header__nav-ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Signika";
+}
+.header__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 3rem;
+}
+.header__info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.header__info-text p{
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+}
+.header__info-text h2{
+    font-family: "Signika";
+}
+.header__info-text button {
+    padding: 1rem;
+    width: 50%;
+    background-color: transparent;
+    font-family: "Signika";
+    border: solid #DFBC62 .1rem;
+    border-radius: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.header__info-img {
+    background-image: url(../images/Logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 30rem;
+    aspect-ratio: 1 / 1;
+    border: solid #DFBC62 .1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__info-img div {
+    background-image: url(../images/cake-photo.png);
+    width: 10rem;
+    height: 10rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: solid #fff .2rem;
+}
 
 /*----------GON: conocenos----------*/
 
