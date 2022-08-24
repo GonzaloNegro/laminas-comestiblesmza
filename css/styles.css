@@ -90,21 +90,36 @@
 
 /*----------GON: conocenos----------*/
 .conoc{
-    width: 100%;
-    height: 613px;
+    height: 780px;
 
     background-color: #FFFBF4;
 
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
 .conoc-img{
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+}
+
+.conoc-img-in{
+    width: 532px;
+    height: 507px;
+    
+/*     opacity: 0.56; */
+    border: 3px solid #DFBC62;
+    border-radius: 42px;
+}
+
+.conoc-img-in img{
+    border-radius: 42px;
+    z-index: 1;
+    margin-left: 100px;
+    margin-top: -50px;
 }
 
 .conoc-info{
