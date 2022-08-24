@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,19 +14,23 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <title>Láminas comestibles mza</title>
 </head>
+
 <body>
     <header class="header">
         <nav class="header__nav">
-            <div class="header__nav-title">
+            <a href="index.html" class="header__nav-title">
                 <div></div>
-                <h1>Aminas comestibles</h1>
-            </div>
+                <h1>
+                    <p>Aminas</p>
+                    <p>comestibles</p>
+                </h1>
+            </a>
             <ul class="header__nav-ul">
-                <li><a href="#">Conócenos</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Nuestro trabajo</a></li>
-                <li><a href="#">Información</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#conocenos">Conócenos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nuestro_trabajo">Nuestro trabajo</a></li>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
         <div class="header__info">
@@ -41,8 +46,7 @@
         </div>
     </header>
     <main>
-        <section id="conocenos"></section>
-        <section id="servicios">
+        <section id="conocenos">
             <div class="serv">
                 <div class="serv-img">
                     asdas
@@ -52,19 +56,48 @@
                         <h2>Conócenos</h2>
                     </div>
                     <div class="serv-info-text">
-                        <p>Somos una empresa de laminas comestibles y brindamos el servicio personalizado de impresión en laminas de arroz, chocotranfers y cortantes a pedido 📦. Esto quiere decir que nos puedes enviar tu diseño o también te podemos ayudar con el diseño para tu decoración.</p>
+                        <p>Somos una empresa de laminas comestibles y brindamos el servicio personalizado de impresión
+                            en laminas de arroz, chocotranfers y cortantes a pedido 📦. Esto quiere decir que nos puedes
+                            enviar tu diseño o también te podemos ayudar con el diseño para tu decoración.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="nuestro_trabajo"></section>
+
+        <section id="servicios">
+            <h2 class="servicios__title">Servicios</h2>
+            <div class="servicios__servicios">
+                <div class="servicios__servicios-card">
+                    <p>Decorativas</p>
+                    <img src="./images/torta-1.png" alt="Torta">
+                    <p>Láminas de arroz</p>
+                </div>
+                <div class="servicios__servicios-card">
+                    <p>Decorativas</p>
+                    <img src="./images/torta-2.png" alt="Torta">
+                    <p>Chocotranfers</p>
+                </div>
+                <div class="servicios__servicios-card">
+                    <p>Moldes</p>
+                    <img src="./images/molde-1.png" alt="Torta">
+                    <p>Cortantes</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="nuestro_trabajo">
+            <h2 class="trabajo__title">Nuestro trabajo</h2>
+            <div class="workContainer"></div>
+        </section>
+
         <section id="informacion">
             <div class="info">
                 <div class="info-titulo">
                     <h2>TIENES DUDAS DE NUESTRO SERVICIO</h2>
                 </div>
                 <div class="info-contenido">
-                    <p>Si desea saber mayor información sobre nuestro servicio, no dudes en escribirnos en cualquier momento😊</p>
+                    <p>Si desea saber mayor información sobre nuestro servicio, no dudes en escribirnos en cualquier
+                        momento😊</p>
                 </div>
                 <div class="info-button">
                     <button>PEDIR INFORMACIÓN</button>
@@ -90,4 +123,5 @@
     </footer>
     <script src="js/script.js"></script>
 </body>
+
 </html>
