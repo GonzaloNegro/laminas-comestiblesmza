@@ -138,7 +138,7 @@
     text-transform: uppercase;
     color: #A75D3D;
 }
-.serv-info-title::after{
+.conoc-info-title::after{
     content: "";
     background-color: #DFBC62;
     width: 79px;
@@ -332,4 +332,114 @@
     font-size: 16px;
     line-height: 19px;
     color: white;
+}
+
+
+/* ----------------media queries------------------ */
+
+
+/* TABLET */
+@media screen and (max-width: 1023px){
+
+
+}
+
+/* MOBILE */
+@media screen and (max-width: 599px){
+    .conoc{
+        width: auto;
+        height: auto;
+
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    
+    .conoc-img{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .conoc-img-in{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .conoc-img-in img{
+        width: 250;
+        height: 250px;
+        margin-left: 10px;
+        margin-top: -20px;
+    }
+
+    .conoc-info-title h2{
+        font-size: 44px;
+    }
+    .conoc-info-title::after{
+        margin-right: 160px;
+    }
+    
+    .conoc-info-text{
+        width: 250px;
+        height: auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .conoc-info-text p{
+        font-size: 16px;
+    }
+
+    /* ----- INFO ----- */
+
+    .info{
+        width: auto;
+        height: auto;
+    }
+    
+    .info-titulo{
+        margin-bottom: 40px;
+    }
+    
+    .info-titulo::after{
+        margin-right: 180px;
+        margin-top: 50px;
+    }
+    
+    .info-titulo h2{
+        font-size: 18px;
+    }
+    
+    .info-contenido p{
+        width: auto;
+        height: auto;
+
+        font-size: 16px;
+    }
+    
+    .info-button{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .info-button button{
+        width: auto;
+        height:  auto;
+
+        font-size: 16px;
+    }
+
+    /* -----CONTACTO----- */
+    .cont{
+        width: auto;
+        height: auto;
+    }
+    
+    .cont-form{
+        width: 300px;
+        height: 300px;
+
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
 }
