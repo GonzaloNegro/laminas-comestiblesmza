@@ -1,0 +1,255 @@
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+-------------GON: conocenos-------------
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.serv {
+    width: 100%;
+    height: 613px;
+
+    background-color: #FFFBF4;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.serv-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.serv-info {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.serv-info-title h2 {
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: #A75D3D;
+}
+
+.serv-info-title::after {
+    content: "";
+    background-color: #DFBC62;
+    width: 79px;
+    height: 4px;
+    position: absolute;
+    margin-right: 160px;
+}
+
+.serv-info-text {
+    width: 451px;
+    height: 223px;
+    margin-top: 40px;
+
+    text-align: left;
+}
+
+.serv-info-text p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 41px;
+    color: #414141;
+
+    opacity: 0.9;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+-------------GON: conocenos-------------
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+-------------GON: información-------------
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.info {
+    width: 100%;
+    height: 613px;
+
+    background-color: #A15B3D;
+    background-image: url(../images/background-info.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.info-titulo {
+    height: 54px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-titulo::after {
+    content: "";
+    background-color: #DFBC62;
+    width: 79px;
+    height: 4px;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.info-titulo h2 {
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.info-contenido {
+    height: 96px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-contenido p {
+    width: 830px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    color: white;
+}
+
+.info-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-button button {
+    width: 236px;
+    height: 50px;
+    padding: 14px, 30px, 14px, 30px;
+
+    font-family: 'Signika', sans-serif;
+    border: none;
+    border-radius: 32px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: #DFBC62;
+    cursor: pointer;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+-------------GON: información-------------
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+-------------GON: contacto-------------
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.cont {
+    width: 100%;
+    height: 1000px;
+
+    /*   background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); */
+    background-image: url(../images/chef.png);
+    background-repeat: no-repeat;
+    /*     background-attachment: fixed; */
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-form {
+    width: 818px;
+    height: 550px;
+
+
+    background: linear-gradient(152.29deg, #B47255 7.91%, #A15B3D 35.32%, #844023 94.05%);
+    border-radius: 31px;
+}
+
+.cont-form-titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-form-titulo::after {
+    content: "";
+    background-color: #DFBC62;
+    width: 79px;
+    height: 4px;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.cont-form-titulo h2 {
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+-------------GON: contacto-------------
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+-------------GON: footer-------------
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.fot {
+    width: 100%;
+    height: 82px;
+
+    background-color: #DFBC62;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fot p {
+    width: 377px;
+    height: 19px;
+    left: 548px;
+    top: 4919.96px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+-------------GON: footer-------------
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
