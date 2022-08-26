@@ -5,12 +5,12 @@ const navLinks = document.querySelectorAll('.navLinks');
 let useLinks;
 
 let works = [
-    { photo: '../images/torta-1.png', text: 'torta' },
-    { photo: '../images/torta-2.png', text: 'torta' },
-    { photo: '../images/torta-1.png', text: 'torta' },
-    { photo: '../images/torta-2.png', text: 'torta' },
-    { photo: '../images/torta-1.png', text: 'torta' },
-    { photo: '../images/torta-2.png', text: 'torta' }
+    { photo: './images/torta-1.png', text: 'torta' },
+    { photo: './images/torta-2.png', text: 'torta' },
+    { photo: './images/torta-1.png', text: 'torta' },
+    { photo: './images/torta-2.png', text: 'torta' },
+    { photo: './images/torta-1.png', text: 'torta' },
+    { photo: './images/torta-2.png', text: 'torta' }
 ];
 
 works.forEach(work => {
