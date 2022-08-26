@@ -184,6 +184,12 @@ a {
     background-color: #DFBC62;
     cursor: pointer;
 }
+
+.info-button button:hover{
+    background-color: transparent;
+    border: 3px solid #DFBC62;
+    font-size: 98%;
+}
 /*----------GON: contacto----------*/
 
 .cont{
@@ -488,6 +494,12 @@ a {
 
         font-size: 16px;
         padding: 5px;
+    }
+
+    .info-button button:hover{
+        background-color: transparent;
+        border: 1px solid #DFBC62;
+        font-size: 90%;
     }
 
     /* -----CONTACTO----- */
