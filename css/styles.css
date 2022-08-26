@@ -229,7 +229,7 @@ a {
     width: 79px;
     height: 4px;
     position: absolute;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .cont-form-titulo h2{
@@ -240,6 +240,70 @@ a {
     line-height: 54px;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.cont-form-media{
+    height: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.cont-form-media-info{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cont-form-media-info h3{
+    font-family: signika;
+    color: white;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.cont-form-media-info p{
+    font-family: Roboto;
+    color: white;
+    font-size: 20px;
+
+    text-align: center;
+}
+
+.cont-form-media-info-dir{
+    max-width: 300px;
+}
+
+.cont-form-media-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.cont-form-media-buttons button{
+    font-size: 26px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 32px;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.cont-form-media-buttons button:hover{
+    background-color: #DFBC62;
+}
+
+.but{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+i{
+    margin-left: 10px;
 }
 
 /*----------GON: Footer----------*/
@@ -510,10 +574,47 @@ a {
     
     .cont-form{
         width: 300px;
-        height: 300px;
+        height: 360px;
 
         margin-top: 40px;
         margin-bottom: 20px;
     }
+
+    .cont-form-media-info{
+        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+    .cont-form-media-info h3{
+        font-size: 16px;
+    }
+    
+    .cont-form-media-info p{
+        font-family: Roboto;
+        color: white;
+        font-size: 14px;
+    
+        text-align: center;
+    }
+
+    .cont-form-media-buttons{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    
+    .cont-form-media-buttons button{
+        font-size: 14px;
+    }
+    
+    .but{
+        margin: 5px;
+    }
+    
+    i{
+        margin-left: 10px;
+    }
+    
 
 }
