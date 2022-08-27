@@ -194,26 +194,26 @@ a {
 
 .cont{
     width: 100%;
-    height: 1000px;
+    height: 700px;
 
-  /*   background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); */
     background-image: url(../images/chef.png);
     background-repeat: no-repeat;
-/*     background-attachment: fixed; */
     background-size: cover;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
+    position: relative;
 }
 
-.cont-form{
-    width: 818px;
-    height: 550px;
-
-
-    background: linear-gradient(152.29deg, #B47255 7.91%, #A15B3D 35.32%, #844023 94.05%);
-    border-radius: 31px;
+.cont::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    opacity: 0.6;
 }
 
 .cont-form-titulo{
@@ -232,6 +232,7 @@ a {
     margin-top: 60px;
 }
 
+
 .cont-form-titulo h2{
     font-family: 'Signika', sans-serif;
     font-style: normal;
@@ -239,34 +240,30 @@ a {
     font-size: 44px;
     line-height: 54px;
     text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.cont-form-media{
-    height: 100%;
-
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+    color: #A75D3D;
+    z-index: 1;
 }
 
 .cont-form-media-info{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
+    z-index: 1;
 }
 
 .cont-form-media-info h3{
     font-family: signika;
-    color: white;
+    color: #A75D3D;
     font-weight: 700;
     font-size: 26px;
     line-height: 27px;
     text-align: center;
+
 }
 
 .cont-form-media-info p{
     font-family: Roboto;
-    color: white;
+    color: black;
     font-size: 20px;
 
     text-align: center;
@@ -276,34 +273,32 @@ a {
     max-width: 300px;
 }
 
-.cont-form-media-buttons{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-.cont-form-media-buttons button{
-    font-size: 26px;
-    padding: 10px;
-    background-color: transparent;
-    border-radius: 32px;
-    color: white;
-    border: 2px solid white;
-    cursor: pointer;
-}
-
-.cont-form-media-buttons button:hover{
-    background-color: #DFBC62;
-}
-
-.but{
+.cont-form-media-info-dir-tit{
     display: flex;
     justify-content: center;
-    margin: 10px;
 }
 
-i{
-    margin-left: 10px;
+.cont-form-media-info-ins-tit{
+    display: flex;
+    justify-content: center;
+}
+
+.cont-form-media-info-tel-tit{
+    display: flex;
+    justify-content: center;
+}
+
+a button{
+    width: 100px;
+    height: 100px;
+    background-color: #DFBC62;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+a .fa-brands, .fa-solid{
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
 }
 
 /*----------GON: Footer----------*/
@@ -312,7 +307,7 @@ i{
     width: 100%;
     height: 82px;
 
-    background-color: #DFBC62;
+    background-color: #A75D3D;
     display: flex;
     justify-content: center;
     align-items: center;
