@@ -99,78 +99,85 @@ a {
 /*----------FRAN: nuestro trabajo----------*/
 
 /*----------GON: informacion----------*/
-.info{
-    width: 100%;
-    height: 613px;
 
-    background-color: #A15B3D;
-    background-image: url(../images/background-info.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+.info{
+    width: auto;
+    height: auto;
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
 }
 
-.info-titulo{
-    height: 54px;
+.info-text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
 
+.info-text-button a button i{
+    margin-left: 10px;
+}
+
+.info-text-titulo{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.info-titulo::after{
+.info-text-titulo::after{
     content: "";
     background-color: #DFBC62;
     width: 79px;
     height: 4px;
     position: absolute;
     margin-top: 100px;
+    margin-right: 650px;
 }
 
-.info-titulo h2{
+.info-text-titulo h2{
     font-family: 'Signika', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 44px;
     line-height: 54px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #A75D3D;
+    text-align: left;
 }
 
-.info-contenido{
-    height: 96px;
-
+.info-text-contenido{
+    margin-top: 40px;
+    margin-bottom: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.info-contenido p{
-    width: 830px;
+.info-text-contenido p{
+    width: 500px;
     text-align: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 48px;
-    color: white;
+    color: black;
+    text-align: left;
 }
 
-.info-button{
+.info-text-button{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.info-button button{
+.info-text-button button{
     width: 236px;
     height: 50px;
     padding: 14px, 30px, 14px, 30px;
@@ -185,10 +192,35 @@ a {
     cursor: pointer;
 }
 
-.info-button button:hover{
+.info-text-button button:hover{
     background-color: transparent;
     border: 3px solid #DFBC62;
     font-size: 98%;
+    color: #DFBC62;
+}
+
+
+.info-img{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-img-in{
+    width: 532px;
+    height: 507px;
+    
+    border: 3px solid #DFBC62;
+    border-radius: 42px;
+}
+
+.info-img-in img{
+    width: 100%;
+    border-radius: 42px;
+    z-index: 1;
+    margin-left: 40px;
+    margin-top: -50px;
 }
 /*----------GON: contacto----------*/
 
@@ -248,6 +280,7 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     z-index: 1;
 }
 
@@ -269,9 +302,6 @@ a {
     text-align: center;
 }
 
-.cont-form-media-info-dir{
-    max-width: 300px;
-}
 
 .cont-form-media-info-dir-tit{
     display: flex;
@@ -357,6 +387,9 @@ a .fa-brands, .fa-solid{
         margin-left: 40px;
         margin-top: -30px;
     }
+
+    /* INFO */
+
 }
 
 /* TABLET */
@@ -407,48 +440,59 @@ a .fa-brands, .fa-solid{
     }
         /* ----- INFO ----- */
 
-        .info{
-            width: auto;
-            height: auto;
+        .info-text-button a button i{
+            margin-left: 10px;
         }
         
-        .info-titulo{
-            margin-bottom: 40px;
+        .info-text-titulo{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
         
-        .info-titulo::after{
+        .info-text-titulo::after{
+            content: "";
+            background-color: #DFBC62;
+            width: 79px;
+            height: 4px;
+            position: absolute;
+            margin-top: 100px;
             margin-right: 0px;
-            margin-top: 50px;
         }
         
-        .info-titulo h2{
-            font-size: 18px;
+        .info-text-titulo h2{
+            font-size: 26px;
+            text-align: center;
         }
         
-        .info-contenido p{
-            width: auto;
-            height: auto;
-    
-            font-size: 16px;
-        }
-        
-        .info-button{
-            margin-top: 40px;
+        .info-text-contenido{
+            margin-top: 25px;
             margin-bottom: 20px;
         }
         
-        .info-button button{
+        .info-text-contenido p{
             width: auto;
-            height:  auto;
-    
             font-size: 16px;
-            padding: 5px;
+            text-align: center;
+        }
+
+        .info-img-in{
+            width: 400px;
+            height: 400px;
+        }
+        
+        .info-img-in img{
+            margin-left: 20px;
+            margin-top: -20px;
         }
 
             /* -----CONTACTO----- */
         .cont{
             width: auto;
-            height: auto;
+            height: 400px;
+            flex-wrap: wrap;
         }
         
         .cont-form{
@@ -517,48 +561,14 @@ a .fa-brands, .fa-solid{
 
     /* ----- INFO ----- */
 
-    .info{
-        width: auto;
-        height: auto;
+    .info-img-in{
+        width: 250px;
+        height: 250px;
     }
     
-    .info-titulo{
-        margin-bottom: 40px;
-    }
-    
-    .info-titulo::after{
-        margin-right: 0px;
-        margin-top: 50px;
-    }
-    
-    .info-titulo h2{
-        font-size: 18px;
-    }
-    
-    .info-contenido p{
-        width: auto;
-        height: auto;
-
-        font-size: 16px;
-    }
-    
-    .info-button{
-        margin-top: 40px;
-        margin-bottom: 20px;
-    }
-    
-    .info-button button{
-        width: auto;
-        height:  auto;
-
-        font-size: 16px;
-        padding: 5px;
-    }
-
-    .info-button button:hover{
-        background-color: transparent;
-        border: 1px solid #DFBC62;
-        font-size: 90%;
+    .info-img-in img{
+        margin-left: 10px;
+        margin-top: -10px;
     }
 
     /* -----CONTACTO----- */
@@ -575,8 +585,8 @@ a .fa-brands, .fa-solid{
         margin-bottom: 20px;
     }
 
+
     .cont-form-media-info{
-        margin: 10px;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -588,10 +598,23 @@ a .fa-brands, .fa-solid{
     
     .cont-form-media-info p{
         font-family: Roboto;
-        color: white;
+        color: black;
         font-size: 14px;
     
         text-align: center;
+    }
+
+    .cont-form-media-info-tel{
+        margin-top: 20px;
+    }
+
+    .cont-form-media-info-dir{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .cont-form-media-info-ins{
+        margin-bottom: 20px;
     }
 
     .cont-form-media-buttons{
