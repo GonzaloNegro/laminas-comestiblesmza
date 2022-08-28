@@ -536,6 +536,7 @@ a .fa-brands, .fa-solid{
         padding: 10px;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .conoc-info-title h2{
