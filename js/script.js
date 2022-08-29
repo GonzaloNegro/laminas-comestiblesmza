@@ -4,13 +4,14 @@ const fondoNav = document.querySelector('.fondoNav');
 const navLinks = document.querySelectorAll('.navLinks');
 let useLinks;
 
+// TRABAJOS
 let works = [
-    { photo: './images/torta-1.png', text: 'torta' },
-    { photo: './images/torta-2.png', text: 'torta' },
-    { photo: './images/torta-1.png', text: 'torta' },
-    { photo: './images/torta-2.png', text: 'torta' },
-    { photo: './images/torta-1.png', text: 'torta' },
-    { photo: './images/torta-2.png', text: 'torta' }
+    { photo: './images/work1.png', text: 'torta' },
+    { photo: './images/work2.png', text: 'torta' },
+    { photo: './images/work3.png', text: 'Molde' },
+    { photo: './images/work4.png', text: 'Molde' },
+    { photo: './images/work5.png', text: 'torta' },
+    { photo: './images/work6.png', text: 'torta' }
 ];
 
 works.forEach(work => {
@@ -28,6 +29,8 @@ works.forEach(work => {
     workContainer.append(div);
 })
 
+
+// NAVBAR
 burga.addEventListener('click', openNav)
 fondoNav.addEventListener('click', openNav)
 for (let i = 0; i < navLinks.length; i++) {
