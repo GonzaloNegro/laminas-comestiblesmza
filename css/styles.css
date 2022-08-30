@@ -111,6 +111,8 @@ p .bold{
 .info{
     width: auto;
     height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 
     display: flex;
     flex-direction: row;
