@@ -25,10 +25,21 @@
     background-repeat: no-repeat;
     color: #fff;
 }
-
+.header__work {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
 .header__nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 5rem;
+} 
+.header__nav-work {
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 1.5rem;
     padding: 2rem 5rem;
@@ -99,7 +110,7 @@
 
 .fondoNav {
     position: absolute;
-    background-color: #0005;
+    background-color: #0009;
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -138,6 +149,7 @@
     gap: 2rem;
     width: 100%;
     padding: 3rem;
+    padding-bottom: 5rem;
 }
 
 .header__info-text {
@@ -152,8 +164,18 @@
     text-transform: uppercase;
     font-size: 1.1rem;
 }
+.decoration {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+.decoration div {
+    height: 4px;
+    width: 43px;
+    background: #DFBC62;
+}
 
-.header__info-text p:first-child {
+.decoration p {
     font-size: 1.5rem;
 }
 
@@ -174,6 +196,7 @@
     font-weight: 600;
     transition: .2s;
     font-size: 1.05rem;
+    height: min-content;
 }
 
 .header__info-text button:hover {
@@ -204,7 +227,18 @@
     border-radius: 50%;
     border: solid #fff .2rem;
 }
-
+.fixedNav {
+    display: none;
+}
+.fijo {
+    background: #a15b3dee;
+    backdrop-filter: blur(.1rem);
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
 @media (min-width: 931px) {
     .burga {
         display: none;
@@ -246,26 +280,25 @@
 .nav-menu_visible {
     display: flex;
     position: absolute;
-    right: 0;
     top: 0;
     padding: 7rem 3rem;
-    background-color: #666;
     height: 100%;
-    align-items: flex-end;
     justify-content: flex-start;
     font-size: 1.3rem;
-    right: 0;
+    width: 80%;
+    left: 0;
     animation: nav;
     animation-duration: .4s;
+    background: linear-gradient(128.85deg, #A15B3D 17.51%, #A15B3D 17.51%, #7F442B 57.49%, #672F18 87.15%);
 }
 
 @keyframes nav {
     0% {
-        right: -100%;
+        left: -100%;
     }
 
     100% {
-        right: 0;
+        left: 0;
     }
 }
 
@@ -289,6 +322,17 @@
     text-transform: uppercase;
     font-family: 'Signika', sans-serif;
 }
+.services-decoration, .work-decoration {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .75rem;
+}
+.services-decoration div, .work-decoration div {
+    height: 4px;
+    width: 79px;
+    background: #DFBC62;
+}
 
 .servicios__title {
     font-family: "Signika";
@@ -308,7 +352,9 @@
 .servicios__servicios-card img {
     border-radius: 1rem;
 }
-
+.servicios__servicios-card .decoration {
+    margin: 1rem 0;
+}
 .servicios__servicios-card p:first-child {
     background-color: #C4A656;
     font-family: 'Josefin Sans', sans-serif;
@@ -349,18 +395,28 @@
     gap: 2rem;
     background: linear-gradient(133.92deg, #B47255 25.15%, #A15B3D 52.52%, #844023 89%);
 }
+#nuestro_trabajo-work {
+    margin: 2rem 0;
+}
 #nuestro_trabajo a button {
     width: 15rem;
+    background-color: transparent;
+    font-family: "Signika";
+    border: solid #DFBC62 .2rem;
     border-radius: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .2s;
+    font-size: 1.05rem;
     height: min-content;
     padding: 1rem;
-    text-transform: uppercase;
-    color: #fff;
-    font-family: 'Signika';
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+#nuestro_trabajo a button:hover {
+    background-color: #DFBC62;
+}
+.work-decoration {
+    margin: 1rem 0;
 }
 .trabajo__title {
     font-size: 2.75rem;
@@ -368,6 +424,10 @@
     font-family: 'Signika', sans-serif;
     color: #fff;
     text-align: center;
+}
+.trabajo__title-work {
+    color: #A75D3D;
+    margin-bottom: 2rem;
 }
 
 .trabajo__works {
@@ -394,7 +454,7 @@
     position: absolute;
     display: none;
     bottom: 3rem;
-    left: 5rem;
+    left: 2rem;
     color: #fff;
     text-transform: uppercase;
     font-family: 'Signika';
