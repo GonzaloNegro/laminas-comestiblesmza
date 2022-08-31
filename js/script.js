@@ -55,6 +55,35 @@ function openNav() {
     body.classList.toggle('no-scroll');
 }
 
+// SHOW NAVBAR MOBILE FIXED
+const burga2 = document.querySelector('.burgaTwo');
+const fondoNav2 = document.querySelector('.fondoNav2');
+burga2.addEventListener('click', openNav2)
+fondoNav2.addEventListener('click', openNav2)
+
+const navLinks2 = document.querySelectorAll('.navLinks2');
+for (let i = 0; i < navLinks2.length; i++) {
+    navLinks2[i].addEventListener('click', () => {
+        if (fondoNav2.classList.contains('displayNav')) {
+            openNav2();
+        }
+    })
+}
+function openNav2() {
+    const burgas2 = document.querySelectorAll('.burgas2');
+    const navBar = document.querySelector(".header__nav-ul2");
+    useLinks = document.querySelectorAll('.useLinks2');
+    const body = document.querySelector('body');
+
+    burgas2[0].classList.toggle('burga0');
+    burgas2[1].classList.toggle('burga1');
+    burgas2[2].classList.toggle('burga2');
+    navBar.classList.toggle("nav-menu_visible");
+    fondoNav2.classList.toggle('displayNav');
+    body.classList.toggle('no-scroll');
+}
+
+
 // SHOW NAVBAR FIXED
 document.addEventListener('DOMContentLoaded', function () {
     navegacionFija();
