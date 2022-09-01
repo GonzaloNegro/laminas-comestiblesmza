@@ -23,7 +23,6 @@ a {
 .conoc{
     height: 780px;
 
-    background-color: #FFFBF4;
 
     display: flex;
     justify-content: space-evenly;
@@ -320,18 +319,21 @@ p .bold{
 
 
 .cont-form-media-info-dir-tit{
+    padding: 15px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
 
 .cont-form-media-info-ins-tit{
+    padding: 15px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
 
 .cont-form-media-info-tel-tit{
+    padding: 15px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
